@@ -34,7 +34,7 @@ h2 {
   border: 0;
   cursor: pointer;
   position: absolute;
-  top: 25rem;
+  top: 26rem;
 }
 .dice img {
   width: 40px;
@@ -42,7 +42,12 @@ h2 {
 .dice:hover {
   box-shadow: 0 0 20px var(--Neon-Green);
 }
-
+.pattern-mobile {
+  display: none;
+}
+.pattern-desktop{
+    width: 100%;
+}
 section {
   background-color: var(--Dark-Grayish-Blue);
   margin: auto;
@@ -50,6 +55,7 @@ section {
   padding: 30px;
   text-align: center;
   box-shadow: var(--Grayish-Blueyish-Blue);
+  width: 40%;
 }
 main {
   display: flex;
@@ -58,11 +64,25 @@ main {
   flex-direction: column;
 }
 
-@media(min-width: 425px) {
+@media (max-width: 425px) {
   main {
     margin: auto;
   }
   .dice {
     position: absolute;
+    top: 64vh;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .pattern-desktop {
+    display: none;
+  }
+  .pattern-mobile {
+    display: block;
+    width: 100%;
+  }
+  section {
+    width: 100%;
   }
 }
