@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-manrope: "Manrope", sans-serif;
+  --color-light-cyan: #cee3e9;
+  --color-Neon-Green: #52ffa8;
+  --color-grayish-blue: #4e5d73;
+  --color-Dark-Grayish-blue: #323a49;
+  --color-dark-blue: #1f2632;
+}
+
+.btn-shadow:hover {
+  box-shadow: 0px 0px 17px #52ffa8;
+  cursor: pointer;
+}
